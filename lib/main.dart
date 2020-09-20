@@ -30,6 +30,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
+Widget page(text) {
+  return Center(child: Text(text, style: TextStyle(fontSize: 40),));
+}
 
 class MyScreenPage1 extends StatelessWidget {
   const MyScreenPage1({Key key}) : super(key: key);
@@ -38,7 +41,7 @@ class MyScreenPage1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.blue,
-      child: Center(child: Text("Hi screen one")),
+      child: page("Hi I'm one!"),
     );
   }
 }
@@ -49,7 +52,7 @@ class MyScreenPage2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.amber,
-      child: Center(child: Text("Hi screen two")),
+      child: page("Hi I'm two!"),
     );
   }
 }
@@ -60,7 +63,7 @@ class MyScreenPage3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.redAccent,
-      child: Center(child: Text("Hi screen three")),
+      child: page("Hi I'm three!"),
     );
   }
 }
